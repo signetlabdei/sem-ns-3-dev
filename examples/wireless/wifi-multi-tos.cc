@@ -172,15 +172,7 @@ int main (int argc, char *argv[])
 
   Simulator::Destroy ();
 
-  if (throughput > 0)
-    {
-      std::cout << "Aggregated throughput: " << throughput << " Mbit/s" << std::endl;
-    }
-  else
-    {
-      NS_LOG_ERROR ("Obtained throughput is 0!");
-      exit (1);
-    }
+  std::cout << "Aggregated throughput: " << throughput << " Mbit/s" << std::endl;
 
   return 0;
 }
