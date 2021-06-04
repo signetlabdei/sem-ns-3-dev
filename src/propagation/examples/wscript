@@ -8,6 +8,10 @@ def build(bld):
                                  ['core', 'mobility', 'config-store', 'stats', 'propagation', 'buildings'])
     obj.source = 'main-propagation-loss.cc'
 
+    obj = bld.create_ns3_program('main-propagation-loss-no-gnuplot',
+                                 ['core', 'mobility', 'config-store', 'stats', 'propagation', 'buildings'])
+    obj.source = 'main-propagation-loss-no-gnuplot.cc'
+
     obj = bld.create_ns3_program('jakes-propagation-model-example',
                                  ['core', 'propagation', 'buildings'])
     obj.source = 'jakes-propagation-model-example.cc'
