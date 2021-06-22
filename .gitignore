@@ -40,3 +40,4 @@ build/
 version.cache
 /.cache/
 /compile_commands.json
+.ipynb_checkpoints
