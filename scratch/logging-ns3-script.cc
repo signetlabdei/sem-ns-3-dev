@@ -18,6 +18,6 @@ main (int argc, char *argv[])
   NS_LOG_WARN("Warn");
   NS_LOG_ERROR("Error");
   NS_LOG_LOGIC("Logic");
-  // NS_LOG_FUNCTION("Function");
+  NS_LOG_FUNCTION("Function");
   Simulator::Destroy ();
 }
